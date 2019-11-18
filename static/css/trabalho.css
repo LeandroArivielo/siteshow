@@ -1,0 +1,10 @@
+.separador15linhas{
+    height: 15px;
+}
+.separador30linhas{
+    height: 30px;
+}
+.teste li.dropdown:hover div.dropdown-menu
+{ 
+    display: block; 
+}

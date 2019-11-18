@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/static/css/trabalho.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="d-flex justify-content-center">
+                <a class="ml-5 pl-5 navbar-brand" href="#">
+                    <img src="/templates/imagens/oie_transparent.png" width="50" height="50"
+                        class="d-inline-block align-top" alt="Logo">
+                </a>
+            </div>
+
+            <div class="d-flex justify-content-center collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <form class="form-inline">
+                    <div class="mr-2">
+                        <span class="font-weight-bold text-primary align-bottom">CIDADE:</span>
+                    </div>
+                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="">
+                    <div class="mr-2">
+                        <span class="font-weight-bold text-primary align-bottom">ONG:</span>
+                    </div>
+                    <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="">
+                    <div class="mr-2">
+                        <span class="font-weight-bold text-primary align-bottom">TIPOS:</span>
+                    </div>
+                    <select class="form-control">
+                        <option></option>
+                        <option>ONGs de Animais</option>
+                        <option>ONGs de Apoio a mulheres</option>
+                        <option>ONGs de Arte</option>
+                        <option>ONGs de Crianças</option>
+                        <option>ONGs de Cultura</option>
+                        <option>ONGs de Dependentes Químicos</option>
+                        <option>ONGs De Direitos Humanos</option>
+                        <option>ONGs De Doação De Órgãos</option>
+                        <option>ONGs De Educação</option>
+                        <option>ONGs De Educação Ambiental</option>
+                        <option>ONGs De Finanças</option>
+                    </select>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary ">Filtrar</button>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-success">Cadastre-se</button>
+                </div>
+            </div>
+        </nav>
+        <nav class="teste nav-fill sticky-top navbar navbar-expand-lg navbar-dark bg-warning">
+            <div class="mx-5 px-5">
+                <div class="mx-5 px-5">
+                    <ul class="nav nav-fill">
+                        <li class="my-auto nav-item">
+                            <a href="#">
+                                <img src="https://img.icons8.com/windows/32/000000/home.png">
+                            </a>
+                        </li>
+                        <li class="mx-5  nav-item">
+                            <a class="nav-link" href="#">ONGs por cidade</a>
+                        </li>
+                        <li class="mx-5  nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">ONGs por tipo</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">ONGs de Animais</a>
+                                <a class="dropdown-item" href="#">ONGs Ambientais</a>
+                                <a class="dropdown-item" href="#">ONGs de Crianças</a>
+                                <a class="dropdown-item" href="#">ONGs por Tipo</a>
+                                <a class="dropdown-item" href="#">ONGs por Classificação</a>
+                                <a class="dropdown-item" href="#">ONGs de Ajuda Humanitária</a>
+                            </div>
+                        </li>
+                        <li class="mx-5  nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Voluntariado</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">ONGs para Trabalho Voluntário</a>
+                                <a class="dropdown-item" href="#">ONGs para Voluntariado Empresarial</a>
+                                <a class="dropdown-item" href="#">Grupos de Voluntários</a>
+                                <a class="dropdown-item" href="#">Maiores ONGs do Brasil</a>
+                            </div>
+                        </li>
+                        <li class="mx-5  nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Eventos</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Lista de Eventos</a>
+                                <a class="dropdown-item" href="#">Inclua um Eventos</a>
+                            </div>
+                        </li>
+                        <li class="mx-5  nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="true" aria-expanded="false">Aprenda</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">O que é uma ONG</a>
+                                <a class="dropdown-item" href="#">Como criar uma ONG</a>
+                            </div>
+                        </li>
+                        <li class="ml-5 nav-item">
+                            <a class="nav-link" href="#">Calendário de Causas</a>
+                        </li>
+                        <li class="mx-1 my-auto nav-item">
+                            <a href="#">
+                                <img src="https://img.icons8.com/windows/32/000000/search.png" alt="Busca Avançada">
+                            </a>
+                        </li>
+                        <li class="mx-1 my-auto nav-item">
+                            <a href="#">
+                                <img src="https://img.icons8.com/windows/32/000000/filled-sent.png" alt="Contate-nos">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-5 pt-5" role="main">
+        <div class="mt-5 pt-4 separador30linhas"></div>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Lista de ONGs</h1>
+                <p class="lead text-muted">ONGs disponíveis para trabalho voluntário ou doações</p>
+            </div>
+        </section>
+
+        <div class="album mt-5 bg-light">
+            <div class="py-3 d-flex justify-content-center bg-light">
+                <h1 class="text-center">Veja como ajudar!</h1>
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/ajude-com-doacoes.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Ajude uma organização social com doações</span>
+                                </h5>
+                                <p>Veja aqui a lista de organizações sociais, e depoimentos de quem já fez doações.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-warning">Ver lista de ONGs para
+                                        doações</button>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/faca-trabalho-voluntario.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Faça trabalho voluntário em ONGs</span>
+                                </h5>
+                                <p>Veja aqui a lista de organizações sociais, e depoimentos de quem já fez trabalho
+                                    voluntário.</p>
+                                <div class="flex-column d-flex justify-content-around align-items-center">
+                                    <div class="">
+                                        <button type="button" class="btn btn-warning btn-sm">Ver lista de ONGs para
+                                            voluntariado empresarial</button>
+                                        <small class="text-muted">9 mins</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/ajude-divulgar-ong.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Ajude a divulgar uma organização social</span>
+                                </h5>
+                                <p>Veja aqui a lista de organizações sociais de seu município, e ajude a divulgar o
+                                    trabalho da organização.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-warning">Ver lista de ONGs para
+                                        divulgar</button>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/se-envolva-em-causa.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Se envolva em uma causa social de seu
+                                        interesse</span>
+                                </h5>
+                                <p>Ajude organizações que trabalham em prol de causas em que você acredita.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-warning">Ver lista de ONGs por tipo</button>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/faca-voluntariado-empresarial.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Crie projetos de voluntariado empresarial</span>
+                                </h5>
+                                <p>Envolva os funcionários de sua empresa em projetos que apoiam organizações sociais de
+                                    seu município.</p>
+                                <div class="">
+                                    <button type="button" class="btn btn-warning btn-sm">Ver lista de ONGs para
+                                        voluntariado empresarial</button>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img class="card-img-top"
+                                data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                                alt="Thumbnail [100%x225]" src="/templates/imagens/sugira-uma-organizacao.jpg"
+                                data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <p class="card-text"></p>
+                                <h5>
+                                    <span class="font-weight-bold h4">Sugira uma organização social para nosso
+                                        cadastro</span>
+                                </h5>
+                                <p>Ajude a completar nosso cadastro das organizações sociais de seu município.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button type="button" class="btn btn-warning">Sugira uma ONG para cadastro</button>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="px-5 mx-5 row mb-2">
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 p-3 bg-warning text-dark">Blog da ONGs Brasil</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">5 formas de ajudar ONGs de animais</a>
+                            </h3>
+                            <div class="mb-1 text-muted">12 de Nov</div>
+                            <p class="card-text mb-auto">Já pensou em ajudar uma ONG que trabalhe com animais? Se você
+                                gostaria de colaborar com ongs de animais, mas não sabe como, veja mais...</p>
+                            <a href="#">Continue lendo</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                            alt="Thumbnail [200x250]"
+                            src="/templates/imagens/ongs-de-animais-1.jpg"
+                            data-holder-rendered="true" style="width: 200px; height: 250px;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <strong class="d-inline-block mb-2 p-3 bg-warning text-dark">Notícias</strong>
+                            <h3 class="mb-0">
+                                <a class="text-dark" href="#">Nova Edição do Cozinha Anexa Beneficia Fundação Pão dos
+                                    Pobres</a>
+                            </h3>
+                            <div class="mb-1 text-muted">11 de Nov</div>
+                            <p class="card-text mb-auto">Na próxima terça-feira (9) acontece mais uma edição da Cozinha
+                                Anexa no Complex Skatepark. Veja mais...</p>
+                            <a href="#">Continue lendo</a>
+                        </div>
+                        <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                            alt="Thumbnail [200x250]"
+                            src="/templates/imagens/download (1).png"
+                            data-holder-rendered="true" style="width: 200px; height: 250px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
